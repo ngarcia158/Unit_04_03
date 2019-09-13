@@ -13,6 +13,7 @@
 */
 @charset "utf-8";
 @import "cvw_layout.css";
+/*Sets character encoding and imports css*/
 /* Structural Styles */
 html{
    background-color: rgb(151, 151, 151);
@@ -21,12 +22,14 @@ body{
    background-color: rgb(180, 180, 223);
    font-family: Verdana, Geneva, sans-serif;
 }
+/*Sets color of browser and color of the body along with font size*/
 h1, h2{
    font-weight: normal;
 }
 nav a{
    text-decoration: none;
 }
+/*makes the h1 and h2 normal font weight. Takes out underlines of nav a*/
 footer{
    color: white;
    background-color: rgb(101, 101, 101);
@@ -35,6 +38,8 @@ footer{
    padding-top: 1px;
    padding-bottom: 1px;
 }
+/*makes the footer white, makes the backgrund color red 101, 
+green 101, and blue 101. Sets font-size to .8 and aligns text to the middle and adds pading of 1 pixel to top and bottom*/
 /* Body Header Styles */
 body > header{
    background-color: rgb(97, 97, 211);
@@ -47,7 +52,8 @@ body > header > h1{
    font-family: Limelight, cursive;
    margin: 0px;
 }
-
+/*makes the direct chid of body to header a purple color. Makes andything 
+thats a direct child of the body header and h1 the color different, changes font family. Margin 0 pixels and font sze 4vww*/
 body h1 span {
    color: rgba(255, 255, 255, 0.4)
 }
@@ -57,22 +63,24 @@ nav#mainLinks a{
    padding-bottom: 5px;
    color:white;
 }
-
-nav#mainLinks a:active, a:hover{
+/*Makes all hypertext links in the id mainLinks add 5 pixels of padding at the top and bottom and changes the color white*/
+nav#mainLinks a:active, nav#mainLinks a:hover{
    opacity: .8;
    background-color: rgba(51, 51, 51, .5)
 }
-
+/*makes it so when you hover the navigation mainlinks id links it makes the color different and an opacity of .8*/
 
 
 /* Outline Styles */
-#outline{
+nav#outline{
    color:rgb(51, 51, 51);
    font-size: 0.8em
 }
 #outline h1{
    text-align: center;
 }
+/*Makes the color of the navigation element outline id a color of red blue green 51 and font size to .8em. 
+Also amks the h1's in the outline id align to the center*/
 :first-of-type #outline > ol{
    line-height: 2em;
    margin-top: 0px;
@@ -81,15 +89,22 @@ nav#mainLinks a:active, a:hover{
    margin-left: 5px;
    list-style-type: upper-roman;
 }
+/*makes the first outline ol a height of 2em adds 0 pixels to top and bottom and 5 pixels to both sides. 
+Also makes the type of text upper roman*/
+
 nav ol ol{
    list-style-type: upper-alpha;
 }
+/*in the navigation list the second ol element in the nav list the style is uppercase*/
 nav#outline a{
    color: rgb(101, 101, 101);
 }
-nav#outline a:active, a:hover{
+nav#outline a:active,nav#outline a:hover{
    color:rgb(97, 97, 211);
+   text-decoration: underline;
 }
+/*Makes the links in the Outline id a color of red 101, green 101, and blue 101 and when hovered it adds underline to the text and makes it
+red 97, green 97, blue 211*/
 /* Section Styles */
 section{
    background-color: rgb(220, 220, 220);
@@ -99,8 +114,7 @@ section header h1{
    font-size: 2.2em;
    padding-left:10px;
 }
-
-
+/*Makes sectio background a different color and makes the sectio header h1's a font size of 2.2em and adds 10 pixels of padding to the left*/
 /* Article Styles */
 h2 article{
    font-size: 1.4em;
@@ -109,8 +123,8 @@ article p:first-of-type::first-letter{
    font-size: 2em;
    vertical-align: baseline;
 }
-
-
+/*makes all articles in h2 the font size of 1.4 em and the first letter of the first 
+paragraphed is increased in font to 2em and is vertacally aligned at basline*/
 /* Aside Styles*/
 aside{
    font-size: 0.9em;
@@ -120,3 +134,4 @@ aside h1{
    font-size: 1.4em;
 
 }
+/*makes the aside .9 em font size and makes any h1's align at the center and the font size is increased to 1.4em*/
